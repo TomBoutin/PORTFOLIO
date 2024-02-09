@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <title>PORTOLIO | Tom BOUTIN</title>
+
+  <link rel="shortcut icon" href="../assets/title_img.png" type="image/x-icon">
+
+  <meta name="description" content="Tom BOUTIN, développeur web" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Mono+One&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="bg-black-dark">
+  <!-- NAVBAR -->
+  <header class="z-50 fixed top-0 w-full shadow">
+    <nav id="main-nav" class="backdrop-blur mx-auto font-poppins p-6 flex items-center justify-between">
+      <a href="./">
+        <p
+          class="flex items-center text-white font-logo text-base after:block after:bg-white after:w-1.5 after:h-7 after:ml-2 select-none">
+          Tom BOUTIN
+        </p>
+      </a>
+
+      <button aria-label="toggle button" aria-expanded="false" id="menu-btn" class="cursor-pointer w-12 md:hidden">
+        <img src="/assets/menu.svg" alt="" />
+      </button>
+      <ul id="toggled-menu"
+        class="w-screen h-screen md:h-auto absolute top-full left-0 -translate-y-200/100 -z-10 text-transparent bg-black-dark md:bg-transparent flex flex-col items-center pt-16 md:pt-0 gap-10 md:static md:z-10 md:w-min md:transform-none md:flex-row">
+        <li class="group cursor-pointer py-4 md:py-0 md:mr-6 hover:text-white">
+          <a href="#projets" class="text-4xl md:text-xl font-titre uppercase w-full" id="bouton-projet">
+            <p class="text-stroke-1px group-hover:text-stroke-initial">
+              Projets
+            </p>
+          </a>
+        </li>
+        <li class="group cursor-pointer py-4 md:py-0 md:mr-6 hover:text-white">
+          <a href="#profil" class="text-4xl md:text-xl font-titre uppercase w-full" id="bouton-profil">
+            <p class="text-stroke-1px group-hover:text-stroke-initial">
+              Profil
+            </p>
+          </a>
+        </li>
+        <li class="group cursor-pointer py-4 md:py-0 md:mr-6 hover:text-white">
+          <a href="#contact" class="text-4xl md:text-xl font-titre uppercase w-full" id="bouton-contact">
+            <p class="text-stroke-1px group-hover:text-stroke-initial">
+              Contact
+            </p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ACCUEIL -->
+
+  <div class="mt-36 md:ml-0 text-white font-texte flex flex-col md:flex-row justify-between">
+    <div class="flex flex-col gap-8 md:mt-20 ml-8 lg:mt-32 shrink-0 md:mx-auto">
+      <p class="text-4xl font-bold uppercase">Bonjour !</p>
+      <p class="text-2xl">Je suis Tom BOUTIN</p>
+      <p class="text-2xl">Bienvenue sur mon portfolio !</p>
+    </div>
+    <div class="relative w-60 xs:w-80 sm:w-96 md:w-96 lg:w-128 mx-auto">
+      <img src="../assets/anim_bienvenue.svg" alt="" class="absolute inset-0 shrink-0 -z-10" />
+      <img src="../assets/photo.png" alt=""
+        class="rounded-full absolute w-40 -translate-x-19.5 translate-y-8 xs:w-56 xs:-translate-x-27 xs:translate-y-9 sm:w-64 lg:w-80 md:w-64 top-1/2 left-1/2 sm:-translate-x-31 sm:translate-y-12 md:-translate-x-31 md:-translate-y-18.5 lg:-translate-y-18.5 lg:-translate-x-38" />
+    </div>
+  </div>
+  <div class="mx-auto w-25 mt-72 sm:mt-80 md:mt-24 mb-6 z-10">
+    <a href="#projets"><img src="../assets/fleche_bas.svg" alt="" /></a>
+  </div>
+
+  <!-- PROJETS -->
+
+  <div class="flex items-center justify-center relative mb-16">
+    <h2 class="font-titre text-4xl md:text-5xl lg:text-7xl text-white bg-black-dark px-2 scroll-mt-25" id="projets">
+      Projets
+    </h2>
+    <img src="../assets/anim_projets.svg" alt="" class="w-screen absolute -z-10" />
+  </div>
+
+  <div
+    class="grid mx-0 sm:mx-8 md:mx-8 mb-10 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 3xl:grid-cols-5">
+    <a class="group w-60 h-60 backdrop-hue-rotate-60 rounded-xl overflow-hidden relative cursor-pointer xs:w-80 xs:h-80 sm:w-80 sm:h-80 mx-auto"
+      href="./projets/Jeu_de_tarot/">
+      <img src="../assets/projets/Jeu_de_tarot.png" alt=""
+        class="overflow-hidden shrink-0 object-cover h-60 grayscale group-hover:h-64 group-hover:-translate-y-2 group-hover:grayscale-0 transition-all delay-100" />
+      <div class="bg-black-light absolute bottom-0 left-0 w-full">
+        <div class="text-white font-texte px-6 pt-4 pb-8 relative">
+          <h4 class="font-bold text-2xl mb-1">Jeu de Tarot</h4>
+          <p class="absolute text-grey text-sm bottom-3 group-hover:bottom-8 group-hover:opacity-0 transition-all">
+            Design Graphique
+          </p>
+          <p
+            class="absolute hover:underline text-grey text-sm bottom-0 opacity-0 group-hover:bottom-3 group-hover:opacity-100 transition-all">
+            En savoir plus
+          </p>
+        </div>
+      </div>
+    </a>
+
+    <a class="group w-60 h-60 backdrop-hue-rotate-60 rounded-xl overflow-hidden relative cursor-pointer xs:w-80 xs:h-80 sm:w-80 sm:h-80 mx-auto"
+      href="./projets/Site_streaming/">
+      <img src="../assets/projets/site_streaming.png" alt=""
+        class="overflow-hidden shrink-0 object-cover h-60 grayscale group-hover:h-64 group-hover:-translate-y-2 group-hover:grayscale-0 transition-all delay-100" />
+      <div class="bg-black-light absolute bottom-0 left-0 w-full">
+        <div class="text-white font-texte px-6 pt-4 pb-8 relative">
+          <h4 class="font-bold text-2xl mb-1">Site de streaming</h4>
+          <p class="absolute text-grey text-sm bottom-3 group-hover:bottom-8 group-hover:opacity-0 transition-all">
+            Développement Web
+          </p>
+          <p
+            class="absolute hover:underline text-grey text-sm bottom-0 opacity-0 group-hover:bottom-3 group-hover:opacity-100 transition-all">
+            En savoir plus
+          </p>
+        </div>
+      </div>
+    </a>
+
+    <a class="group w-60 h-60 backdrop-hue-rotate-60 rounded-xl overflow-hidden relative cursor-pointer xs:w-80 xs:h-80 sm:w-80 sm:h-80 mx-auto"
+      href="./projets/Pub_et_reportage/">
+      <img src="../assets/projets/pub_et_reportage.png" alt=""
+        class="overflow-hidden shrink-0 object-cover h-60 grayscale group-hover:h-64 group-hover:-translate-y-2 group-hover:grayscale-0 transition-all delay-100" />
+      <div class="bg-black-light absolute bottom-0 left-0 w-full">
+        <div class="text-white font-texte px-6 pt-4 pb-8 relative">
+          <h4 class="font-bold text-2xl mb-1">Reportage et Publicité</h4>
+          <p class="absolute text-grey text-sm bottom-3 group-hover:bottom-8 group-hover:opacity-0 transition-all">
+            Audiovisuel
+          </p>
+          <p
+            class="absolute hover:underline text-grey text-sm bottom-0 opacity-0 group-hover:bottom-3 group-hover:opacity-100 transition-all">
+            En savoir plus
+          </p>
+        </div>
+      </div>
+    </a>
+
+    <a class="group w-60 h-60 backdrop-hue-rotate-60 rounded-xl overflow-hidden relative cursor-pointer xs:w-80 xs:h-80 sm:w-80 sm:h-80 mx-auto"
+    href="./projets/Landing_page_jeux_video/">
+    <img src="../assets/projets/landing_page.png" alt=""
+      class="overflow-hidden shrink-0 object-cover h-60 grayscale group-hover:h-64 group-hover:-translate-y-2 group-hover:grayscale-0 transition-all delay-100" />
+    <div class="bg-black-light absolute bottom-0 left-0 w-full">
+      <div class="text-white font-texte px-6 pt-4 pb-8 relative">
+        <h4 class="font-bold text-2xl mb-1">Landing Page</h4>
+        <p class="absolute text-grey text-sm bottom-3 group-hover:bottom-8 group-hover:opacity-0 transition-all">
+          Design Graphique
+        </p>
+        <p
+          class="absolute hover:underline text-grey text-sm bottom-0 opacity-0 group-hover:bottom-3 group-hover:opacity-100 transition-all">
+          En savoir plus
+        </p>
+      </div>
+    </div>
+  </a>
+
+  <a class="group w-60 h-60 backdrop-hue-rotate-60 rounded-xl overflow-hidden relative cursor-pointer xs:w-80 xs:h-80 sm:w-80 sm:h-80 mx-auto"
+  href="./projets/Data_Visualisation/">
+  <img src="../assets/projets/data_vis.png" alt=""
+    class="overflow-hidden shrink-0 object-cover h-60 grayscale group-hover:h-64 group-hover:-translate-y-2 group-hover:grayscale-0 transition-all delay-100" />
+  <div class="bg-black-light absolute bottom-0 left-0 w-full">
+    <div class="text-white font-texte px-6 pt-4 pb-8 relative">
+      <h4 class="font-bold text-2xl mb-1">Data Visualisation</h4>
+      <p class="absolute text-grey text-sm bottom-3 group-hover:bottom-8 group-hover:opacity-0 transition-all marquee block xs:hidden sm:hidden">
+        Développement Web & Data Visualisation
+      </p>
+      <p class="absolute text-grey text-sm bottom-3 group-hover:bottom-8 group-hover:opacity-0 transition-all hidden xs:block sm:block">
+        Développement Web & Data Visualisation
+      </p>
+      <p
+        class="absolute hover:underline text-grey text-sm bottom-0 opacity-0 group-hover:bottom-3 group-hover:opacity-100 transition-all">
+        En savoir plus
+      </p>
+    </div>
+  </div>
+</a>
+
+
+  </div>
+
+  <h4 class="text-xl text-grey/80 mb-20 font-bold uppercase text-center select-none">Plusieurs projets arrivent...</h4>
+
+
+
+  <!-- PROFIL -->
+
+  <div class="flex items-center justify-center relative mb-6">
+    <h2 class="font-titre text-4xl md:text-5xl lg:text-7xl text-white bg-black-dark px-2 scroll-mt-25" id="profil">
+      Profil
+    </h2>
+    <img src="../assets/anim_profil.svg" alt="" class="w-screen absolute -z-10" />
+  </div>
+
+  <h3 class="font-titre text-xl xs:text-3xl sm:text-5xl xl:text-8xl text-grey/30 mt-8 mb-8 ml-8">
+    /COMPÉTENCES
+  </h3>
+
+  <div class="flex flex-col mx-4 md:mx-10 lg:mx-16 md:flex-row md:items-start md:justify-center md:gap-17">
+    <div class="md:w-full md:max-w-xl">
+      <h4 class="text-white font-bold font-texte text-base mb-8 md:text-2xl lg:text-4xl">
+        Développement Web
+      </h4>
+
+      <div class="grid grid-cols-xxs xs:grid-cols-xs sm:grid-cols-sm ml-5 md:ml-0 gap-5">
+        <div class="group"><img src="../assets/html.png" alt="Logo html"
+            class="h-7 xs:h-10 sm:h-14 object-cover overflow-visible mx-auto md:mx-0 group-hover:rotate-15 group-hover:transition-all transition-all" title="HTML"/></div>
+        <div class="group"><img src="../assets/css.png" alt="Logo css"
+            class="h-7 xs:h-10 sm:h-14 object-cover overflow-visible mx-auto md:mx-0 group-hover:rotate-15 group-hover:transition-all transition-all" title="CSS"/></div>
+        <div class="group"><img src="../assets/sass.png" alt="Logo sass"
+            class="h-7 xs:h-10 sm:h-14 object-cover overflow-visible mx-auto md:mx-0 group-hover:rotate-15 group-hover:transition-all transition-all" title="SASS"/></div>
+        <div class="group"><img src="../assets/tailwind.png" alt="tailwind"
+            class="h-7 xs:h-10 sm:h-14 object-cover overflow-visible mx-auto md:mx-0 group-hover:rotate-15 group-hover:transition-all transition-all" title="Tailwind"/></div>
+        <div class="group"><img src="../assets/js.png" alt="Logo js"
+            class="h-7 xs:h-10 sm:h-14 object-cover overflow-visible mx-auto md:mx-0 group-hover:rotate-15 group-hover:transition-all transition-all" title="Javascript"/></div>
+        <div class="group"><img src="../assets/php.png" alt="Logo php"
+            class="h-7 xs:h-10 sm:h-14 object-cover overflow-visible mx-auto md:mx-0 group-hover:rotate-15 group-hover:transition-all transition-all" title="PHP"/></div>
+        <div class="group"><img src="../assets/sql.png" alt="Logo sql"
+            class="h-7 xs:h-10 sm:h-14 object-cover overflow-visible mx-auto md:mx-0 group-hover:rotate-15 group-hover:transition-all transition-all" title="SQL"/></div>
+      </div>
+    </div>
+    <div class="md:w-full md:max-w-xl">
+      <h4 class="text-white font-bold font-texte text-base mt-4 mb-8 md:mt-0 md:text-2xl lg:text-4xl">
+        Design Graphique
+      </h4>
+      <div class="grid grid-cols-xxs xs:grid-cols-xs sm:grid-cols-sm ml-5 md:ml-0 gap-5">
+        <div class="group"><img src="../assets/figma.png" alt="Logo Figma"
+            class="h-7 xs:h-10 sm:h-14 object-cover overflow-visible mx-auto md:mx-0 group-hover:rotate-15 group-hover:transition-all transition-all" title="Figma"/></div>
+        <div class="group"><img src="../assets/photoshop.png" alt="Logo Photoshop"
+            class="h-7 xs:h-10 sm:h-14 object-cover overflow-visible mx-auto md:mx-0 group-hover:rotate-15 group-hover:transition-all transition-all" title="Adobe Photoshop"/></div>
+        <div class="group"><img src="../assets/premiere.png" alt="Logo Premiere Pro"
+            class="h-7 xs:h-10 sm:h-14 object-cover overflow-visible mx-auto md:mx-0 group-hover:rotate-15 group-hover:transition-all transition-all" title="Adobe Premiere Pro"/></div>
+        <div class="group"><img src="../assets/illustrator.png" alt="Logo Illustrator"
+            class="h-7 xs:h-10 sm:h-14 object-cover overflow-visible mx-auto md:mx-0 group-hover:rotate-15 group-hover:transition-all transition-all" title="Adobe Illustrator"/></div>
+      </div>
+    </div>
+  </div>
+
+
+  <h3
+    class="font-titre text-xl xs:text-3xl sm:text-5xl xl:text-8xl text-grey/30 mt-16 mb-8 ml-8">
+    /à propos
+  </h3>
+
+  <p class="text-white font-texte text-sm mx-20 sm:text-xl mb-12">
+    Je suis <span class="font-bold">passionné</span> par le monde du développement, et je me forme constamment aux
+    nouvelles technologies pour continuer à <span class="font-bold">progresser</span> et acquérir de nouvelles
+    compétences.
+    <br><br>
+    Je suis actuellement étudiant en 2ème année de BUT MMI ( Métier du Multimédia et de l’Internet ) à Limoges.
+    <br><br>
+    À travers ce portfolio, vous avez l'opportunité d'explorer une variété de <span class="font-bold">mes
+      réalisations</span>, issues de mon parcours académique. De la production graphique à l'audiovisuel en passant
+    par
+    la communication, vous pourrez découvrir de nombreux projets que j'ai développés à la fois dans le cadre de mes
+    études et pendant mon temps libre.
+  </p>
+
+  <a href="../assets/CV.pdf" class="group flex justify-center items-center mb-12 w-fit mx-auto" target="_blank">
+    <p
+      class="text-white font-texte px-9 py-4 border-2 border-white rounded-xl group-hover:bg-white group-hover:text-black-dark group-hover:underline group-hover:font-bold duration-100">
+      Voir mon CV</p>
+  </a>
+
+  <!-- CONTACT -->
+
+  <div class="flex items-center justify-center relative mb-8">
+    <h2 class="font-titre text-4xl md:text-5xl lg:text-7xl text-white bg-black-dark px-2 scroll-mt-25" id="contact">
+      Contact
+    </h2>
+    <img src="../assets/anim_contact.svg" alt="" class="w-screen absolute -z-10" />
+  </div>
+
+  <div class="flex flex-col md:flex-row md:items-center md:justify-center md:gap-19">
+    <a href="mailto:tomboutin.tom@gmail.com" class="group flex justify-center items-center mb-12">
+      <p
+        class="text-white font-texte px-9 py-4 border-2 border-white rounded-xl group-hover:bg-white group-hover:text-black-dark group-hover:underline group-hover:font-bold duration-100">
+        tomboutin.tom@gmail.com</p>
+    </a>
+
+    <a href="tel:+33783009364" class="group flex justify-center items-center mb-12">
+      <p
+        class="text-white font-texte px-9 py-4 border-2 border-white rounded-xl group-hover:bg-white group-hover:text-black-dark group-hover:underline group-hover:font-bold duration-100">
+        07 83 00 93 64</p>
+    </a>
+  </div>
+
+  <footer class="bg-black-light">
+
+    <p class="text-white font-texte font-light text-center py-6">COPYRIGHT © 2024 — TOM BOUTIN</p>
+
+  </footer>
+
+  <script src="./js/menu-burger.js"></script>
+</body>
+
+</html>

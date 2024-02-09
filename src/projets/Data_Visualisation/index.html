@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex">
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Tom Boutin | Portfolio</title>
+
+    <link rel="shortcut icon" href="/assets/title_img.png" type="image/x-icon">
+
+    <meta name="description" content="Tom BOUTIN, développeur web" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="bg-black-dark">
+    <!-- NAVBAR -->
+    <header class="z-50 fixed top-0 w-full shadow">
+        <nav id="main-nav" class="backdrop-blur mx-auto font-poppins p-6 flex items-center justify-between">
+            <a href="../../">
+                <p
+                    class="flex items-center text-white font-logo text-base after:block after:bg-white after:w-1.5 after:h-7 after:ml-2 select-none">
+                    Tom BOUTIN
+                </p>
+            </a>
+            <button aria-label="toggle button" aria-expanded="false" id="menu-btn"
+                class="cursor-pointer w-12 md:hidden">
+                <img src="/assets/menu.svg" alt="" />
+            </button>
+            <ul id="toggled-menu"
+                class="w-screen h-screen md:h-auto absolute top-full left-0 -translate-y-200/100 -z-10 text-transparent bg-black-dark md:bg-transparent flex flex-col items-center pt-16 md:pt-0 gap-10 md:static md:z-10 md:w-min md:transform-none md:flex-row">
+                <li class="group cursor-pointer py-4 md:py-0 md:mr-6 hover:text-white">
+                    <a href="../../#projets" class="text-4xl md:text-xl font-titre uppercase w-full"
+                        id="bouton-projet">
+                        <p class="text-stroke-1px group-hover:text-stroke-initial">
+                            Projets
+                        </p>
+                    </a>
+                </li>
+                <li class="group cursor-pointer py-4 md:py-0 md:mr-6 hover:text-white">
+                    <a href="../../#profil" class="text-4xl md:text-xl font-titre uppercase w-full"
+                        id="bouton-profil">
+                        <p class="text-stroke-1px group-hover:text-stroke-initial">
+                            Profil
+                        </p>
+                    </a>
+                </li>
+                <li class="group cursor-pointer py-4 md:py-0 md:mr-6 hover:text-white">
+                    <a href="../../#contact" class="text-4xl md:text-xl font-titre uppercase w-full"
+                        id="bouton-contact">
+                        <p class="text-stroke-1px group-hover:text-stroke-initial">
+                            Contact
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+
+    <a href="../../#projets" class="bg-white fixed z-20 p-3 rounded-full top-27 left-3">
+        <img src="../../../assets/arrow.svg" alt="" class="md:w-6">
+    </a>
+
+    <div class="flex flex-col md:flex-row-reverse md:mt-31 xl:flex-col xl:mt-0">
+
+
+        <img src="../../../assets/projets/data_vis.png" alt=""
+            class="mt-24 md:my-auto xl:my-0 xl:mt-20 h-31 md:h-96 xl:h-64 w-full md:w-1/3 xl:w-screen object-cover md:rounded-l-2xl xl:rounded-none">
+
+        <div class="md:ml-8">
+            <h2 class="font-titre text-2xl text-stroke-1px text-center my-6 sm:text-stroke-2px sm:text-4xl md:mb-10">
+                Data Visualisation</h2>
+            <h3 class="text-white font-texte font-bold text-base uppercase ml-4 mb-4 md:text-xl">
+                Présentation du projet
+            </h3>
+            <p class="text-white font-texte text-base mx-4 mb-8 md:text-lg">
+                Ce projet est centré sur l'exploitation des données relatives aux emplois du temps de toutes les promotions des MMI de Limoges. L'objectif principal était de créer plusieurs visualisations de données portant spécifiquement sur les intervenants et les professeurs. Tout en utilisant une librairie dont j'ai dû apprendre le fonctionnement et ainsi m'adapter à son utilisation.
+                <br><br>
+                Le résultat final a été une série de visualisations de données qui offrent une perspective synthétique et accessible sur les emplois du temps, facilitant ainsi la lecture des données.
+            </p>
+        </div>
+    </div>
+
+    <a href="../Data_Visualisation/dist/"
+        class="group flex justify-center items-center mb-6 w-fit mx-auto" target="_blank">
+        <p
+            class="text-white font-texte px-9 py-4 border-2 border-white rounded-xl group-hover:bg-white group-hover:text-black-dark group-hover:underline group-hover:font-bold duration-100 uppercase">
+            Voir le site final</p>
+    </a>
+
+    <h3 class="text-white font-texte font-bold text-base uppercase ml-12 mb-12 md:text-xl">
+        Réalisations
+    </h3>
+
+    <div class="flex flex-col justify-center items-center md:flex-row gap-4 mx-10 mb-14">
+        <div>
+            <img class="h-auto max-w-full rounded-lg"
+                src="../../../assets/projets/data_vis_histo.png" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg"
+                src="../../../assets/projets/data_vis_diagrammes.png" alt="">
+        </div>
+    </div>
+
+
+    <footer class="bg-black-light">
+
+        <p class="text-white font-texte font-light text-center py-6">COPYRIGHT © 2024 — TOM BOUTIN</p>
+
+    </footer>
+
+    <script src="../../js/menu-burger.js"></script>
+</body>
+
+</html>
